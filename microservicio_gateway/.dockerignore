@@ -1,0 +1,37 @@
+# Ignore target directory and compiled files
+target/
+*.class
+
+# Ignore IDE files
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore Git files
+.git/
+.gitignore
+
+# Ignore Docker files in build context
+Dockerfile
+.dockerignore
+docker-compose.yml
+
+# Ignore log files
+*.log
+logs/
+
+# Ignore temporary files
+*.tmp
+*.temp
+
+# Ignore Maven local repository
+.m2/
+
+# Ignore Spring Boot dev tools restart files
+.spring-boot-devtools.properties

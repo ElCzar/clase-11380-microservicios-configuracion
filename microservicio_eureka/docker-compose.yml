@@ -1,0 +1,7 @@
+services:
+  eureka-server:
+    build: .
+    container_name: microservicio_eureka
+    ports:
+      - "8761:8761"
+    restart: unless-stopped

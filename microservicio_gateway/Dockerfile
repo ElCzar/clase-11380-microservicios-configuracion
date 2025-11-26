@@ -1,5 +1,5 @@
-# Use OpenJDK 21 as the base image
-FROM openjdk:21-jdk-slim
+# Use Eclipse Temurin 21 as the base image
+FROM eclipse-temurin:21-jdk-slim
 
 # Set working directory
 WORKDIR /app
@@ -22,7 +22,7 @@ COPY src ./src
 RUN ./mvnw clean package -DskipTests
 
 # Create a new stage for runtime
-FROM openjdk:21-jdk-slim
+FROM eclipse-temurin:21-jdk-slim
 
 # Set working directory
 WORKDIR /app
